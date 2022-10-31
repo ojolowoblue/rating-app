@@ -1,0 +1,23 @@
+.boxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.boxes .box {
+  width: 50px;
+  height: 50px;
+  background: rgb(112, 85, 36);
+  cursor: pointer;
+}
+
+.boxes:hover .box {
+  background: rgb(220, 206, 13);
+}
+
+.boxes .box:hover ~ .box {
+  background: rgb(112, 85, 36);
+}
+
+.box.selected {
+  background: rgb(220, 206, 13);
+}
